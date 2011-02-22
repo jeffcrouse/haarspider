@@ -1,0 +1,284 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1FC1CB7F13140D9900FD3A9E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FC1CB7E13140D9900FD3A9E /* main.cpp */; };
+		1FC1CBAF13140EFB00FD3A9E /* libopencv_core.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC1CBA313140EFB00FD3A9E /* libopencv_core.dylib */; };
+		1FC1CBB313140EFB00FD3A9E /* libopencv_highgui.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC1CBA713140EFB00FD3A9E /* libopencv_highgui.dylib */; };
+		1FC1CBB413140EFB00FD3A9E /* libopencv_imgproc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC1CBA813140EFB00FD3A9E /* libopencv_imgproc.dylib */; };
+		1FC1CBB713140EFB00FD3A9E /* libopencv_objdetect.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC1CBAB13140EFB00FD3A9E /* libopencv_objdetect.dylib */; };
+		1FC1CBDD1314100100FD3A9E /* libpcrecpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC1CBDB1314100100FD3A9E /* libpcrecpp.a */; };
+		1FC1CBDE1314100100FD3A9E /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC1CBDC1314100100FD3A9E /* libcurl.a */; };
+		1FC1CEA113143A0200FD3A9E /* string_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FC1CEA013143A0200FD3A9E /* string_utils.cpp */; };
+		1FC1CF0713143C1D00FD3A9E /* curl_util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FC1CF0513143C1D00FD3A9E /* curl_util.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8DD76F690486A84900D96B5E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1FC1CB7E13140D9900FD3A9E /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		1FC1CBA313140EFB00FD3A9E /* libopencv_core.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_core.dylib; path = "OpenCV-2.2.0/lib/Debug/libopencv_core.dylib"; sourceTree = SOURCE_ROOT; };
+		1FC1CBA713140EFB00FD3A9E /* libopencv_highgui.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_highgui.dylib; path = "OpenCV-2.2.0/lib/Debug/libopencv_highgui.dylib"; sourceTree = SOURCE_ROOT; };
+		1FC1CBA813140EFB00FD3A9E /* libopencv_imgproc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgproc.dylib; path = "OpenCV-2.2.0/lib/Debug/libopencv_imgproc.dylib"; sourceTree = SOURCE_ROOT; };
+		1FC1CBAB13140EFB00FD3A9E /* libopencv_objdetect.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_objdetect.dylib; path = "OpenCV-2.2.0/lib/Debug/libopencv_objdetect.dylib"; sourceTree = SOURCE_ROOT; };
+		1FC1CBDB1314100100FD3A9E /* libpcrecpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpcrecpp.a; path = /usr/local/lib/libpcrecpp.a; sourceTree = "<absolute>"; };
+		1FC1CBDC1314100100FD3A9E /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = /opt/local/lib/libcurl.a; sourceTree = "<absolute>"; };
+		1FC1CE9F13143A0200FD3A9E /* string_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = string_utils.h; path = src/string_utils.h; sourceTree = "<group>"; };
+		1FC1CEA013143A0200FD3A9E /* string_utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = string_utils.cpp; path = src/string_utils.cpp; sourceTree = "<group>"; };
+		1FC1CF0513143C1D00FD3A9E /* curl_util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = curl_util.cpp; path = src/curl_util.cpp; sourceTree = SOURCE_ROOT; };
+		1FC1CF0613143C1D00FD3A9E /* curl_util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = curl_util.h; path = src/curl_util.h; sourceTree = SOURCE_ROOT; };
+		8DD76F6C0486A84900D96B5E /* haarspider */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = haarspider; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DD76F660486A84900D96B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FC1CBAF13140EFB00FD3A9E /* libopencv_core.dylib in Frameworks */,
+				1FC1CBB313140EFB00FD3A9E /* libopencv_highgui.dylib in Frameworks */,
+				1FC1CBB413140EFB00FD3A9E /* libopencv_imgproc.dylib in Frameworks */,
+				1FC1CBB713140EFB00FD3A9E /* libopencv_objdetect.dylib in Frameworks */,
+				1FC1CBDD1314100100FD3A9E /* libpcrecpp.a in Frameworks */,
+				1FC1CBDE1314100100FD3A9E /* libcurl.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* haarspider */ = {
+			isa = PBXGroup;
+			children = (
+				08FB7795FE84155DC02AAC07 /* Source */,
+				1FC1CBA013140EB200FD3A9E /* libs */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = haarspider;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				1FC1CB7E13140D9900FD3A9E /* main.cpp */,
+				1FC1CE9F13143A0200FD3A9E /* string_utils.h */,
+				1FC1CEA013143A0200FD3A9E /* string_utils.cpp */,
+				1FC1CF0513143C1D00FD3A9E /* curl_util.cpp */,
+				1FC1CF0613143C1D00FD3A9E /* curl_util.h */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DD76F6C0486A84900D96B5E /* haarspider */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FC1CBA013140EB200FD3A9E /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				1FC1CBDB1314100100FD3A9E /* libpcrecpp.a */,
+				1FC1CBDC1314100100FD3A9E /* libcurl.a */,
+				1FC1CBA313140EFB00FD3A9E /* libopencv_core.dylib */,
+				1FC1CBA713140EFB00FD3A9E /* libopencv_highgui.dylib */,
+				1FC1CBA813140EFB00FD3A9E /* libopencv_imgproc.dylib */,
+				1FC1CBAB13140EFB00FD3A9E /* libopencv_objdetect.dylib */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DD76F620486A84900D96B5E /* haarspider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB923108733DC60010E9CD /* Build configuration list for PBXNativeTarget "haarspider" */;
+			buildPhases = (
+				8DD76F640486A84900D96B5E /* Sources */,
+				8DD76F660486A84900D96B5E /* Frameworks */,
+				8DD76F690486A84900D96B5E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = haarspider;
+			productInstallPath = "$(HOME)/bin";
+			productName = haarspider;
+			productReference = 8DD76F6C0486A84900D96B5E /* haarspider */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "haarspider" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 08FB7794FE84155DC02AAC07 /* haarspider */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DD76F620486A84900D96B5E /* haarspider */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DD76F640486A84900D96B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FC1CB7F13140D9900FD3A9E /* main.cpp in Sources */,
+				1FC1CEA113143A0200FD3A9E /* string_utils.cpp in Sources */,
+				1FC1CF0713143C1D00FD3A9E /* curl_util.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB923208733DC60010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					"\"$(SRCROOT)/OpenCV-2.2.0/modules/calib3d/include\"",
+					"\"$(SRCROOT)/OpenCV-2.2.0/modules/contrib/include\"",
+					"\"$(SRCROOT)/OpenCV-2.2.0/modules/core/include\"",
+					"\"$(SRCROOT)/OpenCV-2.2.0/modules/features2d/include\"",
+					"\"$(SRCROOT)/OpenCV-2.2.0/modules/flann/include\"",
+					"\"$(SRCROOT)/OpenCV-2.2.0/modules/gpu/include\"",
+					"\"$(SRCROOT)/OpenCV-2.2.0/modules/highgui/include\"",
+					"\"$(SRCROOT)/OpenCV-2.2.0/modules/imgproc/include\"",
+					"\"$(SRCROOT)/OpenCV-2.2.0/modules/legacy/include\"",
+					"\"$(SRCROOT)/OpenCV-2.2.0/modules/ml/include\"",
+					"\"$(SRCROOT)/OpenCV-2.2.0/modules/objdetect/include\"",
+					"\"$(SRCROOT)/OpenCV-2.2.0/modules/video/include\"",
+					"\"$(SRCROOT)/OpenCV-2.2.0/include\"",
+				);
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/OpenCV-2.2.0/lib/Debug\"",
+					/opt/local/lib,
+				);
+				PRODUCT_NAME = haarspider;
+			};
+			name = Debug;
+		};
+		1DEB923308733DC60010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					"\"$(SRCROOT)/OpenCV-2.2.0/modules/calib3d/include\"",
+					"\"$(SRCROOT)/OpenCV-2.2.0/modules/contrib/include\"",
+					"\"$(SRCROOT)/OpenCV-2.2.0/modules/core/include\"",
+					"\"$(SRCROOT)/OpenCV-2.2.0/modules/features2d/include\"",
+					"\"$(SRCROOT)/OpenCV-2.2.0/modules/flann/include\"",
+					"\"$(SRCROOT)/OpenCV-2.2.0/modules/gpu/include\"",
+					"\"$(SRCROOT)/OpenCV-2.2.0/modules/highgui/include\"",
+					"\"$(SRCROOT)/OpenCV-2.2.0/modules/imgproc/include\"",
+					"\"$(SRCROOT)/OpenCV-2.2.0/modules/legacy/include\"",
+					"\"$(SRCROOT)/OpenCV-2.2.0/modules/ml/include\"",
+					"\"$(SRCROOT)/OpenCV-2.2.0/modules/objdetect/include\"",
+					"\"$(SRCROOT)/OpenCV-2.2.0/modules/video/include\"",
+					"\"$(SRCROOT)/OpenCV-2.2.0/include\"",
+				);
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/OpenCV-2.2.0/lib/Debug\"",
+					/opt/local/lib,
+				);
+				PRODUCT_NAME = haarspider;
+			};
+			name = Release;
+		};
+		1DEB923608733DC60010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		1DEB923708733DC60010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB923108733DC60010E9CD /* Build configuration list for PBXNativeTarget "haarspider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB923208733DC60010E9CD /* Debug */,
+				1DEB923308733DC60010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "haarspider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB923608733DC60010E9CD /* Debug */,
+				1DEB923708733DC60010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}
