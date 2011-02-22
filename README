@@ -19,11 +19,17 @@ General Public License for more details.
 
 INTRODUCTION
 ----------------
-Speed project created on a slow Tuesday morning from 11am-3pm
+Speed project created on a slow Tuesday morning from 11am-3pm.
+
 
 
 REQUIREMENTS
 ----------------
+LibCURL		http://curl.haxx.se/
+pcrecpp		http://www.pcre.org/
+OpenCV		http://opencv.willowgarage.com/wiki/
+
+
 
 EXAMPLE USAGE
 ---------------
@@ -64,3 +70,5 @@ TO DO
 - press 'o' at any time to output image
 - other options to create a squarepacked (or circlepacked) image rather than an average
 - output elapsed time
+
+
