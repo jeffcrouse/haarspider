@@ -16,7 +16,7 @@
 using namespace std;
 
 string truncate(string str, int n=60);
-template <class T> string tostr(const T& t);
+
 bool starts_with(string test, string prefix);
 bool ends_with(string test, string suffix);
 bool ends_with(string test, vector<string> suffix);

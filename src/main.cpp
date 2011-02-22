@@ -13,15 +13,14 @@ using namespace cv;
 using namespace std;
 using namespace pcrecpp;
 
-
+clock_t init;
 bool verbose=false;
 const char* url=NULL;
 const char* haarpath=NULL;
-const char* outfile="out.jpg";
 int levels=5;
 Size result_size(500, 500);
 int min_width=200;
-int min_height=200;
+int min_height=96;
 int max_total_pages=10000;
 vector<string> pages_visited;
 vector<string> bad_suffixes;
@@ -31,8 +30,15 @@ float alpha = .1;
 float beta = 0;
 int total_faces=0;
 vector<Mat> faces;
-int outputs=0;
 
+
+int outputs=0;
+string outfile="out.jpg";
+string extension;
+string basename;
+
+
+template <class T> string tostr(const T& t);
 void parse_args(int argc, char* const argv[]);
 void help();
 void spider(string url, int level);
@@ -43,6 +49,8 @@ void add_to_result(Mat& img);
 // -----------------------------------------
 int main (int argc, char * const argv[]) {
     
+	init=clock();
+
 	// Parse command line options.
 	parse_args(argc, argv);
 	
@@ -54,8 +62,19 @@ int main (int argc, char * const argv[]) {
 	}
 	
 	printf("%s --url %s --haarprofile %s --levels %d --outfile %s\n\n", 
-		   argv[0], url, haarpath, levels, outfile);
+		   argv[0], url, haarpath, levels, outfile.c_str());
 	
+	
+	int idx = outfile.rfind('.');
+	if(idx == std::string::npos)
+	{
+		cout << "The output file must have an extension." << endl;
+		return 1;
+	}
+	
+	extension = outfile.substr(idx+1);
+	basename = outfile.substr(0, idx);
+	outfile = basename+tostr(outputs)+"."+extension;
 	
 	bad_suffixes.push_back(".rss");
 	bad_suffixes.push_back(".ico");
@@ -81,6 +100,8 @@ int main (int argc, char * const argv[]) {
 	
 	cout << "pages visited: " << pages_visited.size() << endl;
 	
+	
+	
 	imwrite(outfile, result);
 	return 0;
 }
@@ -93,6 +114,7 @@ void spider(string url, int level)
 	int key = cvWaitKey(1);
 	if(key=='o' || key=='O') {
 		outputs++;
+		outfile = basename+tostr(outputs)+"."+extension;
 		imwrite(outfile, result);
 	}
 	
@@ -164,6 +186,9 @@ void spider(string url, int level)
 		
 		spider(link, level+1);
 	}
+	
+	clock_t elapsed = clock()-init;
+	cout << "ELAPSED SECONDS: " << (double)elapsed / ((double)CLOCKS_PER_SEC) << endl;
 }
 
 
@@ -300,5 +325,14 @@ void parse_args(int argc, char* const argv[])
 			exit(0);
 		}
 	}
+}
+
+
+// -----------------------------------------
+template <class T> string tostr(const T& t)
+{
+    std::ostringstream oss;
+    oss << t;
+    return oss.str();
 }
 

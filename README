@@ -41,6 +41,8 @@ This will:
 3. Go back to 1 (depending on how many levels you specify)
 
 
+Press 'o' at any time to output an image.
+
 INSTALL
 ---------------
 There is no configure script, so all you have to do is:
@@ -70,5 +72,5 @@ TO DO
 - press 'o' at any time to output image
 - other options to create a squarepacked (or circlepacked) image rather than an average
 - output elapsed time
-
+- verbose doesn't really do anything
 

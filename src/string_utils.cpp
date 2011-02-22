@@ -33,10 +33,3 @@ bool ends_with(string test, vector<string> suffix)
 	return false;
 }
 
-// -----------------------------------------
-template <class T> string tostr(const T& t)
-{
-    std::ostringstream oss;
-    oss << t;
-    return oss.str();
-}
