@@ -23,12 +23,12 @@ int min_width=200;
 int min_height=96;
 int max_total_pages=10000;
 vector<string> pages_visited;
+vector<string> images_used;
 vector<string> bad_suffixes;
 Mat result;
 cv::CascadeClassifier haarFinder;
 float alpha = .1;
 float beta = 0;
-int total_faces=0;
 vector<Mat> faces;
 
 
@@ -43,6 +43,7 @@ void parse_args(int argc, char* const argv[]);
 void help();
 void spider(string url, int level);
 bool already_visited(string url);
+bool already_added(string url);
 void add_to_result(Mat& img);
 
 
@@ -141,6 +142,12 @@ void spider(string url, int level)
 		if(!starts_with(image, "http://")) {
 			image = url + image;
 		}
+		
+		if(already_added(image)) {
+			cout << "\t\tImage has already been tried" << endl;
+			continue;
+		}
+		images_used.push_back(image);
 		
 		char* filename = tmpnam(NULL);
 		download(image, filename);
@@ -248,6 +255,16 @@ bool already_visited(string url)
 	return false;
 }
 	
+
+bool already_added(string url)
+{
+	for(int i=0; i<images_used.size(); i++) {
+		if(url.compare(images_used[i])==0) return true;
+	}
+	return false;
+}
+
+
 // -----------------------------------------
 void help()
 {

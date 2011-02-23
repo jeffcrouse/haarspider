@@ -50,21 +50,6 @@ There is no configure script, so all you have to do is:
 make
 
 
-FAQ
--------------
-1. In the XCode project, why is all of the OpenCV stuff linked to $(SRCROOT)/OpenCV-2.2.0 ?
-Cuz that's how I like it.  Try it out -- you might like it too. Go into the directory, open a terminal and type:
-
-wget http://downloads.sourceforge.net/project/opencvlibrary/opencv-unix/2.2/OpenCV-2.2.0.tar.bz2
-tar -xvf OpenCV-2.2.0.tar.bz2
-cd  OpenCV-2.2.0
-ccmake -G Xcode .
-
-In the ccmake interactive console, you should see a "EMPTY CACHE" at the top of the console window. Hit 'c' to create an initial configuration. Once that's done, use the arrow keys to move down the list, enter to change a value. 
-
-Hit 'c' to reconfigure for the new settings, then 'g'.  That will create OpenCV-2.2.0/OpenCV.xcodeproj.  Open that XCode project and build!  Easy! And for debugging, your libraries are linked to the cource code, so you can track down errors easily.
-
-
 TO DO
 --------------
 - command line args for maximum and min image size to consider
