@@ -1,0 +1,38 @@
+haarspider
+By Jeff Crouse
+jefftimesten at gmail dot com
+http://www.jeffcrouse.info
+
+
+INSTALL INSTRUCTIONS
+==========================
+
+Before compiling haarspider, you must install PCRE and CURL.  Here is what worked for me on my Mac.
+
+
+#PCRE
+wget ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.02.tar.gz
+tar -xvf pcre-8.02.tar.gz
+cd pcre-8.02
+./configure
+make
+sudo make install
+
+#LibCURL
+wget http://curl.haxx.se/download/curl-7.21.4.tar.gz
+tar -xvf curl-7.21.4.tar.gz
+cd curl-7.21.4
+./configure
+make
+sudo make install
+
+#OpenCV
+wget http://downloads.sourceforge.net/project/opencvlibrary/opencv-unix/2.2/OpenCV-2.2.0.tar.bz2
+tar -xvf OpenCV-2.2.0.tar.bz2
+cd  OpenCV-2.2.0
+ccmake -G Xcode -D CMAKE_OSX_ARCHITECTURES="i386;x86_64" .
+xcodebuild -target ALL_BUILD
+sudo xcodebuild -target install
+
+
+Then just cd to the haarspider directory and run 'make'
