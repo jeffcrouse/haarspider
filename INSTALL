@@ -7,7 +7,7 @@ http://www.jeffcrouse.info
 INSTALL INSTRUCTIONS
 ==========================
 
-Before compiling haarspider, you must install PCRE and CURL.  Here is what worked for me on my Mac.
+Before compiling haarspider, you must install PCRE, CURL, and OpenCV.  Here is what worked for me on my Mac.
 
 
 #PCRE
